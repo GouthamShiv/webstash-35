@@ -8,9 +8,50 @@ body {
     margin: 0;
     height: 100vh;
     display: flex;
-    overflow: hidden;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
+    background-color: #042b4d;
     font-family: 'Roboto', sans-serif;
+}
+
+.carousel {
+    width: 500px;
+    height: 530px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.btn {
+    width: 49.5%;
+    border: none;
+    color: black;
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: tomato;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
 }
